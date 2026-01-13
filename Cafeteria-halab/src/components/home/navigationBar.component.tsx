@@ -1,5 +1,7 @@
 
-//import './App.css'
+import '../../styles/home/navigationBar.css'
+import HalabLogo from "../../assets/Images/Halab-Logo.png"
+
 
 function NavigationBarComponent() {
 
@@ -7,7 +9,7 @@ function NavigationBarComponent() {
     <div>
         <div className="container">
             <nav className="content">
-                <h1 className="logo">Halab Cafeteria</h1>
+                <img className="logo" src={HalabLogo} alt="Halab Logo"/>
                 <ul id="sidemenu">
                     <li><a href="#about">About</a></li>
                     <li><a href="#menu">Menu</a></li>

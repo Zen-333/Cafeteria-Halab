@@ -1,0 +1,129 @@
+/* ===== Root Theme Colors (Aleppo Inspired) ===== */
+:root {
+  --aleppo-stone: #f4f1ec;
+  --aleppo-olive: #6b7d5a;
+  --aleppo-pomegranate: #8c2f39;
+  --aleppo-charcoal: #2e2e2e;
+  --aleppo-gold: #c9a24d;
+}
+
+/* ===== Container ===== */
+.container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+
+  background-color: var(--aleppo-stone);
+}
+
+
+/* ===== Nav Layout ===== */
+.content {
+  max-width: 1800px;
+  margin: 0 auto;
+  padding: 18px 32px;
+  height: 92px;
+
+  display: flex;
+  align-items: center; /* vertical center logo & menu */
+  justify-content: space-between; /* logo left, menu right */
+  height: 92px; /* fixes navbar height explicitly */
+}
+
+.content .logo {
+  display: block;
+  height: 56px;
+  width: auto;
+  object-fit: contain;
+}
+
+.container::after {
+  content: "";
+  display: block;
+  height: 2px;
+  background: linear-gradient(
+    to right,
+    transparent,
+    var(--aleppo-gold),
+    transparent
+  );
+}
+
+/* ===== Logo ===== */
+.content img {
+  height: 56px;
+  width: auto;
+  object-fit: contain;
+
+  /* subtle elegance */
+  filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.08));
+  transition: transform 0.25s ease;
+}
+
+.content img:hover {
+  transform: scale(1.03);
+}
+
+/* ===== Navigation Menu ===== */
+#sidemenu {
+  display: flex;
+  gap: 32px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+/* ===== Links ===== */
+#sidemenu li a {
+  text-decoration: none;
+  font-size: 0.95rem;
+  font-weight: 500;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+
+  color: var(--aleppo-charcoal);
+  position: relative;
+  padding-bottom: 4px;
+
+  transition: color 0.25s ease;
+}
+
+/* ===== Hover underline (heritage feel) ===== */
+#sidemenu li a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+
+  width: 0;
+  height: 2px;
+  background-color: var(--aleppo-pomegranate);
+
+  transition: width 0.25s ease;
+}
+
+#sidemenu li a:hover {
+  color: var(--aleppo-pomegranate);
+}
+
+#sidemenu li a:hover::after {
+  width: 100%;
+}
+
+/* ===== Responsive ===== */
+@media (max-width: 768px) {
+  .content {
+    flex-direction: row;
+    padding: 16px 20px;
+  }
+
+  #sidemenu {
+    gap: 18px;
+  }
+
+  .content img {
+    height: 44px;
+  }
+}
