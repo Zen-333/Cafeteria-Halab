@@ -1,0 +1,33 @@
+.BSC {
+  text-align: center;
+  padding: 80px 20px 0px;
+}
+
+/* English Header */
+.BS-Header {
+  font-size: clamp(2.2rem, 4vw, 3rem);
+  font-weight: 600;
+  line-height: 1.15;
+  margin: 0;
+
+  color: var(--aleppo-charcoal);
+  letter-spacing: -0.02em;
+}
+
+/* Highlighted Aleppo */
+.BS-Aleppo {
+  color: var(--aleppo-pomegranate);
+  font-weight: 700;
+}
+
+/* Arabic Subtitle */
+.BS-ArabicHeader {
+  margin-top: 16px;
+
+  font-size: 1.8rem;
+  font-style: italic;
+  font-weight: 400;
+
+  color: var(--aleppo-olive);
+  letter-spacing: 0.05em;
+}
