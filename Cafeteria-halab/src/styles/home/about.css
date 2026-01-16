@@ -1,0 +1,286 @@
+/* ===== About Section ===== */
+.about-section {
+  padding: 100px 20px;
+  background-color: #ffffff;
+  position: relative;
+}
+
+/* Subtle decorative element */
+.about-section::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 120px;
+  height: 4px;
+  background: linear-gradient(
+    to right,
+    transparent,
+    var(--aleppo-gold),
+    transparent
+  );
+}
+
+.about-container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* ===== Header ===== */
+.about-header {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.about-title {
+  font-size: clamp(2.2rem, 4vw, 3rem);
+  font-weight: 600;
+  color: var(--aleppo-charcoal);
+  margin: 0 0 12px;
+  letter-spacing: -0.02em;
+  line-height: 1.2;
+}
+
+.about-highlight {
+  color: var(--aleppo-pomegranate);
+  font-weight: 700;
+}
+
+.about-subtitle {
+  font-size: 1.5rem;
+  color: var(--aleppo-olive);
+  font-style: italic;
+  margin: 0;
+  letter-spacing: 0.05em;
+}
+
+/* ===== Story Section ===== */
+.about-story {
+  max-width: 900px;
+  margin: 0 auto 70px;
+  text-align: center;
+}
+
+.about-intro {
+  font-size: 1.2rem;
+  line-height: 1.8;
+  color: var(--aleppo-charcoal);
+  margin: 0 0 24px;
+}
+
+.about-intro strong {
+  color: var(--aleppo-pomegranate);
+  font-weight: 600;
+}
+
+.about-description {
+  font-size: 1.1rem;
+  line-height: 1.8;
+  color: #555;
+  margin: 0;
+}
+
+.about-description strong {
+  color: var(--aleppo-gold);
+  font-weight: 600;
+}
+
+/* ===== Features Grid ===== */
+.about-features {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 32px;
+  margin-bottom: 80px;
+}
+
+.feature-card {
+  background: var(--aleppo-stone);
+  padding: 40px 28px;
+  border-radius: 8px;
+  text-align: center;
+  transition: all 0.3s ease;
+  border: 2px solid transparent;
+}
+
+.feature-card:hover {
+  transform: translateY(-8px);
+  border-color: var(--aleppo-gold);
+  box-shadow: 0 12px 32px rgba(0, 0, 0, 0.08);
+}
+
+/* ===== Feature Icons ===== */
+.feature-icon-wrapper {
+  width: 80px;
+  height: 80px;
+  margin: 0 auto 24px;
+  background: linear-gradient(
+    135deg,
+    var(--aleppo-pomegranate),
+    var(--aleppo-gold)
+  );
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: transform 0.3s ease;
+}
+
+.feature-card:hover .feature-icon-wrapper {
+  transform: rotate(10deg) scale(1.1);
+}
+
+.feature-icon {
+  font-size: 2rem;
+  color: #ffffff;
+}
+
+/* ===== Feature Content ===== */
+.feature-title {
+  font-size: 1.3rem;
+  font-weight: 600;
+  color: var(--aleppo-charcoal);
+  margin: 0 0 12px;
+  letter-spacing: -0.01em;
+}
+
+.feature-text {
+  font-size: 0.95rem;
+  line-height: 1.7;
+  color: #666;
+  margin: 0;
+}
+
+/* ===== Commitment Section ===== */
+.about-commitment {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 50px 40px;
+  background: linear-gradient(
+    135deg,
+    rgba(201, 162, 77, 0.08),
+    rgba(140, 47, 57, 0.08)
+  );
+  border-radius: 12px;
+  border-left: 5px solid var(--aleppo-gold);
+  position: relative;
+}
+
+.commitment-badge {
+  text-align: center;
+  margin-bottom: 24px;
+}
+
+.commitment-title {
+  display: inline-block;
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: var(--aleppo-pomegranate);
+  margin: 0;
+  padding-bottom: 8px;
+  border-bottom: 3px solid var(--aleppo-gold);
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+}
+
+.commitment-text {
+  font-size: 1.1rem;
+  line-height: 1.9;
+  color: var(--aleppo-charcoal);
+  text-align: center;
+  margin: 0;
+}
+
+.commitment-text strong {
+  color: var(--aleppo-pomegranate);
+  font-weight: 600;
+}
+
+/* ===== Responsive Design ===== */
+@media (max-width: 768px) {
+  .about-section {
+    padding: 70px 20px;
+  }
+
+  .about-header {
+    margin-bottom: 40px;
+  }
+
+  .about-subtitle {
+    font-size: 1.3rem;
+  }
+
+  .about-story {
+    margin-bottom: 50px;
+  }
+
+  .about-intro {
+    font-size: 1.1rem;
+  }
+
+  .about-description {
+    font-size: 1rem;
+  }
+
+  .about-features {
+    grid-template-columns: 1fr;
+    gap: 24px;
+    margin-bottom: 60px;
+  }
+
+  .feature-card {
+    padding: 32px 24px;
+  }
+
+  .feature-icon-wrapper {
+    width: 70px;
+    height: 70px;
+  }
+
+  .feature-icon {
+    font-size: 1.8rem;
+  }
+
+  .about-commitment {
+    padding: 36px 28px;
+  }
+
+  .commitment-title {
+    font-size: 1.2rem;
+  }
+
+  .commitment-text {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .about-section {
+    padding: 60px 16px;
+  }
+
+  .about-intro {
+    font-size: 1rem;
+  }
+
+  .about-description {
+    font-size: 0.95rem;
+  }
+
+  .feature-title {
+    font-size: 1.2rem;
+  }
+
+  .feature-text {
+    font-size: 0.9rem;
+  }
+
+  .about-commitment {
+    padding: 28px 20px;
+    border-left-width: 4px;
+  }
+
+  .commitment-text {
+    font-size: 0.95rem;
+  }
+}

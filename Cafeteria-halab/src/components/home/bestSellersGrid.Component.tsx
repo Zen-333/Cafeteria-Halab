@@ -39,7 +39,7 @@ function BestSellersGrid() {
     style={{color: "#c0b17c",}}
     className="BSG-star"
   />
-  Most Popular Picks For You
+   Most Popular Picks For You 
   <FontAwesomeIcon
     icon={faStar}
     beat
