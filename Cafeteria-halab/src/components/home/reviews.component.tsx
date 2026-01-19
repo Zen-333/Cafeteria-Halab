@@ -52,7 +52,7 @@ function ReviewsComponent() {
   useEffect(() => {
     const interval = setInterval(() => {
       setCurrentIndex((prevIndex) => (prevIndex + 1) % reviews.length)
-    }, 5000) // Change review every 5 seconds
+    }, 10000) // Change review every 10 seconds
 
     return () => clearInterval(interval)
   }, [])

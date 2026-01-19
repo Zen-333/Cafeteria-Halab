@@ -12,18 +12,21 @@ const bestSellers = [
     id: 1,
     name: 'Chicken Shawarma',
     description: 'Marinated chicken, garlic sauce, fresh bread',
+    price: '1.000 KD',
     image: chickenShawarmaImg,
   },
   {
     id: 2,
     name: 'Meat Shawarma',
     description: 'Slow-roasted beef with Aleppo spices',
+    price: '1.000 KD',
     image: meatShawarmaImg,
   },
   {
     id: 3,
     name: 'Halab Fries',
     description: 'Crispy fries with signature sauce',
+    price: '0.950 KD',
     image: friesImg,
   },
 ]
@@ -58,6 +61,7 @@ function BestSellersGrid() {
             <div className="BSG-content">
               <h3>{item.name}</h3>
               <p>{item.description}</p>
+              <p>{item.price}</p>
 
               <a
                 href="https://www.talabat.com/kuwait/cafeteria-halab"

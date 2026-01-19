@@ -112,6 +112,32 @@
   width: 100%;
 }
 
+/* Container already exists */
+.nav-links {
+  display: flex;
+  flex-direction: column;
+  gap: 8px; /* spacing between menu & socials */
+}
+
+/* Social media row */
+.nav-socials {
+  display: flex;
+  gap: 16px;
+  justify-content: flex-start; /* aligns with page links */
+  margin-top: 6px;
+}
+
+.nav-socials a {
+  color: #ceab60;
+  font-size: 0.95rem;
+  transition: color 0.25s ease, transform 0.25s ease;
+}
+
+.nav-socials a:hover {
+  color: var(--aleppo-pomegranate);
+  transform: scale(1.2);
+}
+
 /* ===== Responsive ===== */
 @media (max-width: 768px) {
   .content {
@@ -125,5 +151,13 @@
 
   .content img {
     height: 44px;
+  }
+    .nav-links {
+    flex-direction: column;
+  }
+
+  .nav-socials {
+    justify-content: center;
+    gap: 12px;
   }
 }
