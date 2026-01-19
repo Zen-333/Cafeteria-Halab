@@ -123,7 +123,7 @@
 .nav-socials {
   display: flex;
   gap: 16px;
-  justify-content: flex-start; /* aligns with page links */
+  justify-content: flex-end; /* aligns with page links */
   margin-top: 6px;
 }
 

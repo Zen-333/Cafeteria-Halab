@@ -61,7 +61,7 @@ function BestSellersGrid() {
             <div className="BSG-content">
               <h3>{item.name}</h3>
               <p>{item.description}</p>
-              <p>{item.price}</p>
+              <div className='BSG-price'>{item.price}</div>
 
               <a
                 href="https://www.talabat.com/kuwait/cafeteria-halab"

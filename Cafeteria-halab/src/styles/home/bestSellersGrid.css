@@ -23,6 +23,12 @@
   color: var(--aleppo-charcoal);
 }
 
+.BSG-price {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: var(--aleppo-olive);
+  margin: 8px 0;
+}
 
 /* Card */
 .BSG-card {
