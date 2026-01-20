@@ -1,25 +1,49 @@
 .footer {
-  background-color: #282828;
-  border-top: 1px solid rgba(0, 0, 0, 0.08);
-  margin-top: 80px;
+  background-color: var(--aleppo-stone);
+  color: var(--aleppo-charcoal);
+  padding: 40px 32px 24px;
+  border-top: 2px solid var(--aleppo-gold);
+}
+
+.contact-section {
+  max-width: 1200px;
+  margin: 0 auto 32px;
+}
+
+.contact-section h2 {
+  font-size: 1.5rem;
+  color: var(--aleppo-pomegranate);
+  margin-bottom: 16px;
+  letter-spacing: 0.03em;
+}
+
+.contact-info p {
+  margin: 4px 0;
+  font-size: 0.95rem;
+  line-height: 1.4;
+  color: var(--aleppo-charcoal);
+}
+
+.contact-map {
+  margin-top: 16px;
+  border-radius: 8px;
+  overflow: hidden;
 }
 
 .footer-content {
   max-width: 1200px;
   margin: 0 auto;
-  padding: 24px 32px;
-
   display: flex;
   justify-content: space-between;
   align-items: center;
-
+  flex-wrap: wrap;
   font-size: 0.85rem;
-  color: white;
+  gap: 8px;
 }
 
 .footer-brand {
   font-weight: 500;
-  letter-spacing: 0.04em;
+  letter-spacing: 0.03em;
 }
 
 .footer-tagline {
@@ -27,11 +51,11 @@
   color: var(--aleppo-olive);
 }
 
-/* ===== Mobile ===== */
+/* Mobile */
 @media (max-width: 768px) {
   .footer-content {
     flex-direction: column;
-    gap: 8px;
     text-align: center;
+    gap: 4px;
   }
 }
