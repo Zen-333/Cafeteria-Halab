@@ -1,0 +1,171 @@
+/* ===== Hero Section ===== */
+.story-hero {
+  position: relative;
+  height: 70vh; /* tall hero section */
+  background-image: url("../../assets/Images/team-photo.jpg"); /* your team photo */
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--aleppo-stone);
+}
+
+.story-hero-overlay {
+  text-align: center;
+  background: rgba(0, 0, 0, 0.45); /* dark overlay to make text pop */
+  padding: 20px 40px;
+  border-radius: 12px;
+  backdrop-filter: blur(2px); /* subtle modern effect */
+}
+
+.story-hero-title {
+  font-size: 3rem;
+  font-weight: 700;
+  margin-bottom: 12px;
+  color: var(--aleppo-gold);
+}
+
+.story-hero-subtitle {
+  font-size: 1.2rem;
+  font-style: italic;
+  margin-bottom: 20px;
+  color: var(--aleppo-stone);
+}
+
+.story-hero-cta {
+  background-color: var(--aleppo-pomegranate);
+  color: var(--aleppo-stone);
+  padding: 12px 28px;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.hero-team-image
+{
+    width: auto;
+    height: 800px;
+}
+
+.story-hero-cta:hover {
+  background-color: var(--aleppo-gold);
+  transform: scale(1.05);
+}
+
+
+/* ===== History Section ===== */
+.story-history {
+  padding: 60px 20px;
+  background-color: var(--aleppo-stone);
+  color: var(--aleppo-charcoal);
+  text-align: center;
+}
+
+.story-history h2 {
+  font-size: 2rem;
+  color: var(--aleppo-pomegranate);
+  margin-bottom: 16px;
+}
+
+.story-history p {
+  max-width: 800px;
+  margin: 0 auto 12px;
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+/* ===== Team Section ===== */
+.story-team {
+  padding: 60px 20px;
+  background-color: var(--aleppo-olive);
+  color: var(--aleppo-stone);
+  text-align: center;
+}
+
+.story-team h2 {
+  font-size: 2rem;
+  color: var(--aleppo-gold);
+  margin-bottom: 24px;
+}
+
+.team-grid {
+  display: flex;
+  justify-content: center;
+  gap: 32px;
+  flex-wrap: wrap;
+}
+
+.team-card {
+  background-color: var(--aleppo-stone);
+  color: var(--aleppo-charcoal);
+  border-radius: 12px;
+  overflow: hidden;
+  max-width: 250px;
+  text-align: center;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  transition: transform 0.2s;
+}
+
+.team-card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.team-card h3 {
+  margin: 12px 0 4px;
+  color: var(--aleppo-pomegranate);
+}
+
+.team-card p {
+  font-size: 0.9rem;
+  margin-bottom: 12px;
+}
+
+.team-card:hover {
+  transform: scale(1.03);
+}
+
+/* ===== Mission / CTA Section ===== */
+.story-mission {
+  padding: 60px 20px;
+  background-color: var(--aleppo-stone);
+  text-align: center;
+}
+
+.story-mission h2 {
+  font-size: 2rem;
+  color: var(--aleppo-pomegranate);
+  margin-bottom: 16px;
+}
+
+.story-mission p {
+  max-width: 800px;
+  margin: 0 auto 24px;
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+.story-cta {
+  background-color: var(--aleppo-pomegranate);
+  color: var(--aleppo-stone);
+  padding: 12px 28px;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.story-cta:hover {
+  background-color: var(--aleppo-gold);
+  transform: scale(1.05);
+}
+
+.mission-text
+{
+    color: var(--aleppo-olive);
+}
