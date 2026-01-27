@@ -1,8 +1,16 @@
 import '../App.css'
 import '../styles/ourStory/OurStoryPage.css'
 import TeamHeroImg from "../assets/Images/team-photo.png" // replace with your team photo
+import Member1 from "../assets/Images/member-1.jpg"
+import Member2 from "../assets/Images/member-2.jpg"
+import Member3 from "../assets/Images/member-3.jpg"
 
 function OurStoryPage() {
+
+      function btnClick() {
+        window.open("https://www.talabat.com/kuwait/cafeteria-halab");
+    }
+
   return (
     <>
       {/* Hero Section */}
@@ -15,7 +23,7 @@ function OurStoryPage() {
           <p className="story-hero-subtitle">
             Crafting Authentic Flavors, One Dish at a Time
           </p>
-          <button className="story-hero-cta">Meet the Team</button>
+          <a href='#team'><button className="story-hero-cta">Meet the Team</button></a>
         </div>
       </section>
 
@@ -29,7 +37,7 @@ function OurStoryPage() {
             Our team has been perfecting traditional recipes for generations,
             ensuring every bite carries the warmth and heritage of our beloved city.
           </p>
-          <p>
+          <p id="team">
             We specialize in delivering fresh, mouth-watering dishes right to your door.
             Every ingredient is carefully selected, every dish crafted with love.
           </p>
@@ -42,17 +50,17 @@ function OurStoryPage() {
           <h2>Meet Our Team</h2>
           <div className="team-grid">
             <div className="team-card">
-              <img src={TeamHeroImg} alt="Team Member 1"/>
+              <img src={Member1} alt="Team Member 1"/>
               <h3>Ahmed Al Halabi</h3>
               <p>Head Chef & Co-Founder</p>
             </div>
             <div className="team-card">
-              <img src={TeamHeroImg} alt="Team Member 2"/>
+              <img src={Member2} alt="Team Member 2"/>
               <h3>Layla Hassan</h3>
               <p>Operations Manager</p>
             </div>
             <div className="team-card">
-              <img src={TeamHeroImg} alt="Team Member 3"/>
+              <img src={Member3} alt="Team Member 3"/>
               <h3>Omar Khalil</h3>
               <p>Customer Experience</p>
             </div>
@@ -69,7 +77,7 @@ function OurStoryPage() {
             From traditional recipes to modern delivery convenience, we combine
             authenticity with care to make every meal memorable.
           </p>
-          <button className="story-cta">Order Now</button>
+          <button className="story-cta" onClick={btnClick}>Order Now</button>
         </div>
       </section>
     </>
