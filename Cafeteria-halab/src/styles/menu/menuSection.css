@@ -1,0 +1,74 @@
+.menu-section {
+  padding: 60px 20px;
+  background-color: var(--aleppo-stone);
+}
+
+.menu-title {
+  text-align: center;
+  font-size: 2rem;
+  color: var(--aleppo-pomegranate);
+  margin-bottom: 40px;
+}
+
+.menu-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 32px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.menu-card {
+  background-color: #fff;
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+  transition: transform 0.25s ease;
+}
+
+.menu-card:hover {
+  transform: translateY(-6px);
+}
+
+.menu-image {
+  height: 200px;
+  background-size: cover;
+  background-position: center;
+}
+
+.menu-content {
+  padding: 20px;
+  text-align: center;
+}
+
+.menu-content h3 {
+  color: var(--aleppo-pomegranate);
+  margin-bottom: 8px;
+}
+
+.menu-content p {
+  font-size: 0.95rem;
+  color: #555;
+  margin-bottom: 12px;
+}
+
+.menu-price {
+  font-weight: bold;
+  color: var(--aleppo-olive);
+  margin-bottom: 16px;
+}
+
+.menu-button {
+  display: inline-block;
+  padding: 10px 22px;
+  background-color: var(--aleppo-pomegranate);
+  color: var(--aleppo-stone);
+  border-radius: 20px;
+  text-decoration: none;
+  transition: background 0.3s, transform 0.2s;
+}
+
+.menu-button:hover {
+  background-color: var(--aleppo-gold);
+  transform: scale(1.05);
+}
