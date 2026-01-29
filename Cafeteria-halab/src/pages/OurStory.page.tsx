@@ -1,5 +1,5 @@
 import '../App.css'
-import '../styles/ourStory/OurStoryPage.css'
+import '../styles/ourStory/ourStoryPage.css'
 import TeamHeroImg from "../assets/Images/team-photo.png" 
 import Member1 from "../assets/Images/member-1.jpg"
 import Member2 from "../assets/Images/member-2.jpg"
