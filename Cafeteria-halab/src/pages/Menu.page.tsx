@@ -1,5 +1,5 @@
 import '../App.css'
-import MenuSection from '../components/menu/MenuSection.component.tsx'
+import MenuSection from '../components/menu/menuSection.component.tsx'
 import { menuData } from '../data/menuData'
 
 function MenuPage() {
