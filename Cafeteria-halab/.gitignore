@@ -25,4 +25,4 @@ dist-ssr
 
 # Videos
 src/assets/videos/
-*.mp4
+*
