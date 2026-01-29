@@ -70,5 +70,6 @@
 
 .menu-button:hover {
   background-color: var(--aleppo-gold);
+  color: white;
   transform: scale(1.05);
 }

@@ -1,6 +1,6 @@
 import '../App.css'
 import '../styles/ourStory/OurStoryPage.css'
-import TeamHeroImg from "../assets/Images/team-photo.png" // replace with your team photo
+import TeamHeroImg from "../assets/Images/team-photo.png" 
 import Member1 from "../assets/Images/member-1.jpg"
 import Member2 from "../assets/Images/member-2.jpg"
 import Member3 from "../assets/Images/member-3.jpg"

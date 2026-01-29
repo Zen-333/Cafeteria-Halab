@@ -3,15 +3,20 @@
   line-height: 1.5;
   font-weight: 400;
 
-  color-scheme: light dark;
-  color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
+  /* REMOVE DARK MODE */
+  color: #2b2b2b;
+  background-color: #faf7f2;
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+
+  --aleppo-stone: #faf7f2;
+  --aleppo-pomegranate: #b23a3a;
+  --aleppo-olive: #556b2f;
+  --aleppo-charcoal: #2b2b2b;
 }
+
 
 a {
   font-weight: 500;
@@ -24,11 +29,9 @@ a:hover {
 
 body {
   margin: 0;
-  display: flex;
-  place-items: center;
-  min-width: 320px;
   min-height: 100vh;
 }
+
 
 h1 {
   font-size: 3.2em;
@@ -54,15 +57,3 @@ button:focus-visible {
   outline: 4px auto -webkit-focus-ring-color;
 }
 
-@media (prefers-color-scheme: light) {
-  :root {
-    color: #213547;
-    background-color: #ffffff;
-  }
-  a:hover {
-    color: #747bff;
-  }
-  button {
-    background-color: #f9f9f9;
-  }
-}
