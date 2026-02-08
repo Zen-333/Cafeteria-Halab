@@ -2,6 +2,8 @@
 
 A modern, responsive restaurant website for Cafeteria Halab - showcasing authentic Aleppo cuisine in Kuwait.
 
+Live link: https://cafeteriahalab.netlify.app/
+
 ## 📋 Project Overview
 
 This project is a single-page application (SPA) built for learning purposes, featuring a complete restaurant website with multiple pages, interactive components, and a focus on user experience. The site celebrates traditional Syrian/Aleppo cuisine with a clean, heritage-inspired design.
